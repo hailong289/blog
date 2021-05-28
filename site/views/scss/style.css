@@ -1,38 +1,53 @@
-header {
-  width: 100%;
-  height: 80px;
-  background-color: #0D47A1;
-  margin-bottom: 20px;
+body {
+  background-color: #f2f2f2;
 }
 
-header nav {
+body header {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px !important;
+}
+
+body header nav {
   width: 85%;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 7% 78% 15%;
-      grid-template-columns: 7% 78% 15%;
-  -ms-grid-rows: 80px 80px 80px;
-      grid-template-rows: 80px 80px 80px;
+  -ms-grid-columns: 10% 75% 15%;
+      grid-template-columns: 10% 75% 15%;
 }
 
-header nav .logo a {
+body header nav .logo {
+  width: 100%;
+  height: 80px;
+}
+
+body header nav .logo a {
   text-decoration: none;
-  color: white;
+  color: black;
+  height: 80px;
+  display: block;
+  font-weight: 600px;
   font-weight: bold;
 }
 
-header nav .logo a h2 {
-  line-height: 80px;
+body header nav .logo a img {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-header nav .menu {
+body header nav .menu {
   height: 80px;
   line-height: 80px;
 }
 
-header nav .menu ul {
+body header nav .menu ul {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -45,19 +60,20 @@ header nav .menu ul {
           justify-content: flex-start;
 }
 
-header nav .menu ul li {
+body header nav .menu ul li {
   min-width: 90px;
   list-style: none;
   height: 80px;
   text-align: left;
 }
 
-header nav .menu ul li a {
-  color: white;
+body header nav .menu ul li a {
+  color: black;
+  font-weight: 600px;
   text-decoration: none;
 }
 
-header nav .account {
+body header nav .account {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,10 +87,121 @@ header nav .account {
           justify-content: flex-end;
 }
 
-header nav .account a {
+body header nav .account a {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-weight: 600px;
   min-width: 80px;
   text-align: end;
+}
+
+body main .container .content {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  grid-gap: 20px;
+}
+
+body main .container .content .content-left {
+  width: 100%;
+  min-height: 500px;
+}
+
+body main .container .content .content-left .bvm {
+  margin-bottom: 20px;
+}
+
+body main .container .content .content-left .bvm h2 {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  padding: 0px 10px;
+  line-height: 50px;
+  font-size: 25px;
+}
+
+body main .container .content .content-left .glt {
+  margin-bottom: 20px;
+}
+
+body main .container .content .content-left .glt h2 {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  padding: 0px 10px;
+  line-height: 50px;
+  font-size: 25px;
+}
+
+body main .container .content .content-left .gnn {
+  margin-bottom: 20px;
+}
+
+body main .container .content .content-left .gnn h2 {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  padding: 0px 10px;
+  line-height: 50px;
+  font-size: 25px;
+}
+
+body main .container .content .content-left .gkn {
+  margin-bottom: 20px;
+}
+
+body main .container .content .content-left .gkn h2 {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  padding: 0px 10px;
+  line-height: 50px;
+  font-size: 25px;
+}
+
+body main .container .content .content-right {
+  width: 100%;
+  min-height: 500px;
+}
+
+body main .container .content .content-right h2 {
+  width: 100%;
+  height: 50px;
+  background-color: orange;
+  color: white;
+  border-bottom: 1px solid #ccc;
+  padding: 0px 10px;
+  line-height: 50px;
+  font-size: 25px;
+}
+
+body main .container .content .content-right .tlnd {
+  width: 100%;
+  height: 220px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+body main .container .content .content-right .tlnd::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+body main .container .content .content-right .tlnd::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+body main .container .content .content-right .tlnd::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+body footer {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  border-top: 1px solid #ccc;
 }
 /*# sourceMappingURL=style.css.map */
