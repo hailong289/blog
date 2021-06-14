@@ -69,8 +69,8 @@
                     <h2 class="title-footer mb-4">LIÊN HỆ</h2>
                     <ul class="list-unstyled text-dark">
                         <li class="mb-2">Địa chỉ: Cao đẳng FPT</li>
-                        <li class="mb-2">Điện thoại: **********</li>
-                        <li class="mb-2">Email: test@gmail.com</li>
+                        <li class="mb-2">Điện thoại: +84 12345678</li>
+                        <li class="mb-2">Email: dawm999@gmail.com</li>
                     </ul>
                 </div>
 
