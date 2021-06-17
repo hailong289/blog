@@ -30,6 +30,11 @@
                     <li><a href="?act=danhsach">Diễn đàn</a></li>
                     <li><a href="">Giới thiệu</a></li>
                     <li><a href="">Liên hệ</a></li>
+                    <form class="search-container" action="//llamaswill.tumblr.com/search">
+                        <input id="search-box" type="text" class="search-box" name="q" />
+                        <label for="search-box"><span class="glyphicon glyphicon-search search-icon"></span></label>
+                        <input type="submit" id="search-submit" />
+                    </form>
                 </ul>
             </div>
             <div class="account">
