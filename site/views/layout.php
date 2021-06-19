@@ -14,8 +14,13 @@
     <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.11/dist/sweetalert2.all.min.js"></script>
-</head>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+</head>
+<style>
+
+</style>
 <body>
     <header>
         <nav>
@@ -30,11 +35,27 @@
                     <li><a href="?act=danhsach">Diễn đàn</a></li>
                     <li><a href="">Giới thiệu</a></li>
                     <li><a href="">Liên hệ</a></li>
-                    <form class="search-container" action="//llamaswill.tumblr.com/search">
-                        <input id="search-box" type="text" class="search-box" name="q" />
-                        <label for="search-box"><span class="glyphicon glyphicon-search search-icon"></span></label>
-                        <input type="submit" id="search-submit" />
-                    </form>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Các bài viết
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Góc lập trình</a>
+                                <a class="dropdown-item" href="#">Góc kỹ năng</a>
+                                <a class="dropdown-item" href="#">Góc ngoại ngữ</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form class="search-container" action="//llamaswill.tumblr.com/search">
+                            <input id="search-box" type="text" class="search-box" name="q" />
+                            <label for="search-box">
+                                <span class="glyphicon glyphicon-search search-icon"> <i class="fas fa-search"></i> </span>
+                            </label>
+                            <input type="submit" id="search-submit" />
+                        </form>
+                    </li>
                 </ul>
             </div>
             <div class="account">
@@ -88,10 +109,10 @@
                 </div>
 
                 <div class="col-xs-6 col-md-3">
-                    <h6>Các links liên kết</h6>
+                    <h6>Các liên kết</h6>
                     <ul class="footer-links">
                     <li><a href="http://scanfcode.com/about/">Về chúng tôi</a></li>
-                    <li><a href="http://scanfcode.com/contact/">Liên hệ với chúng tô</a></li>
+                    <li><a href="http://scanfcode.com/contact/">Liên hệ với chúng tôi</a></li>
                     <li><a href="http://scanfcode.com/privacy-policy/">Chính sách bảo mật</a></li>
                     </ul>
                 </div>
@@ -101,17 +122,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+                    <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
                 <a href="#">DAWN</a>.
                     </p>
                 </div>
 
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <ul class="social-icons">
-                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                    <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="#"><i class="fab fa-google"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fab fa-instagram"></i></a></li>   
                     </ul>
                 </div>
             </div>
