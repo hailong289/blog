@@ -211,7 +211,7 @@ body footer {
 /* Phần Footer ở đây nhé bro */
 .site-footer {
   background-color: #26272b;
-  padding: 45px 0 20px;
+  padding: 25px 0 20px;
   font-size: 15px;
   line-height: 24px;
   color: #737373;
@@ -374,7 +374,7 @@ $tl: 0.6s; // transition length
 
 
 body {
-margin: 5%;
+margin: 0%;
 }
 
 .search-box {
@@ -411,7 +411,10 @@ margin: 5%;
 
 .search-icon {
   position: relative;
-  left: -30px;
+  left: -31.5px;
   color: white;
   cursor: pointer;
+}
+.search-container{
+  
 }
