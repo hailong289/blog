@@ -111,6 +111,21 @@ class model_home extends model_system{
         $links .= '</ul>';
         return $links;
       }
+      
+      function Listlaptrinh(){
+        $sql = "SELECT * FROM baiviet WHERE iddm =1 ";
+        return $this->query($sql);
+      }
+      
+      function Listkynang(){
+        $sql = "SELECT * FROM baiviet WHERE iddm =2 ";
+        return $this->query($sql);
+      }
+      
+      function Listngoaingu(){
+        $sql = "SELECT * FROM baiviet WHERE iddm =3 ";
+        return $this->query($sql);
+      }
 }
 
 
