@@ -36,6 +36,15 @@ class Home
             case 'danhsach':
                 $this->List();
                 break;
+            case 'goclaptrinh':
+                $this->Listlaptrinh();
+                break;
+            case 'gockynang':
+                $this->Listkynang();
+                break;
+            case 'gocngoaingu':
+                $this->Listngoaingu();
+                break;
             case 'binhluan':
                 $this->comment();
                 break;
@@ -129,6 +138,60 @@ class Home
         $base_url = "?act=danhsach";
         $links = $this->model->base_url($page_num,$page_size,$rows_total,$base_url);
         $view = "views/danhsach.php";
+        require_once "views/layout.php";
+    }
+    public function Listlaptrinh()
+    {
+        $title = "Góc Lập Trình";
+        $title_dm = "Lập trình";
+        $bvlaptrinh = $this->model->Listlaptrinh();
+        $bvnew = $this->model->ListBV_new();
+        // $page_num = 1;
+        // if(isset($_GET['page'])) $page_num = $_GET['page'];
+        // $page_size = 10;
+        // $bv = $this->model->ListBV($page_num, $page_size);
+        // // var_dump($bv);
+        // $rows_total = $this->model->CountBV();
+        // // var_dump($rows_total);
+        // $base_url = "?act=danhsach";
+        // $links = $this->model->base_url($page_num,$page_size,$rows_total,$base_url);
+        $view = "views/laptrinh.php";
+        require_once "views/layout.php";
+    }
+    public function Listkynang()
+    {
+        $title = "Góc kỹ năng";
+        $title_dm = "Kỹ năng";
+        $bvkynang = $this->model->Listkynang();
+        $bvnew = $this->model->ListBV_new();
+        // $page_num = 1;
+        // if(isset($_GET['page'])) $page_num = $_GET['page'];
+        // $page_size = 10;
+        // $bv = $this->model->ListBV($page_num, $page_size);
+        // // var_dump($bv);
+        // $rows_total = $this->model->CountBV();
+        // // var_dump($rows_total);
+        // $base_url = "?act=danhsach";
+        // $links = $this->model->base_url($page_num,$page_size,$rows_total,$base_url);
+        $view = "views/kynang.php";
+        require_once "views/layout.php";
+    }
+    public function Listngoaingu()
+    {
+        $title = "Góc ngoại ngữ";
+        $title_dm = "Ngoại ngữ";
+        $bvlaptrinh = $this->model->Listngoaingu();
+        $bvnew = $this->model->ListBV_new();
+        // $page_num = 1;
+        // if(isset($_GET['page'])) $page_num = $_GET['page'];
+        // $page_size = 10;
+        // $bv = $this->model->ListBV($page_num, $page_size);
+        // // var_dump($bv);
+        // $rows_total = $this->model->CountBV();
+        // // var_dump($rows_total);
+        // $base_url = "?act=danhsach";
+        // $links = $this->model->base_url($page_num,$page_size,$rows_total,$base_url);
+        $view = "views/ngoaingu.php";
         require_once "views/layout.php";
     }
     public function SaveTK()

@@ -50,7 +50,7 @@ class model_home extends model_system{
         return $this->query($sql);
       }
       function ListBV_new(){
-        $sql = "SELECT * FROM baiviet ORDER BY idbv DESC LIMIT 5";
+        $sql = "SELECT * FROM baiviet ORDER BY thoigian DESC LIMIT 5";
         return $this->query($sql);
       }
       function User_DangBai($id){
@@ -110,6 +110,21 @@ class model_home extends model_system{
         // $links .= "<li class='page-item'><a href='{$baseurl}&page_num={$total_pages}' class= 'page-link'>></a></li>";
         $links .= '</ul>';
         return $links;
+      }
+      
+      function Listlaptrinh(){
+        $sql = "SELECT * FROM baiviet WHERE iddm =1 ";
+        return $this->query($sql);
+      }
+      
+      function Listkynang(){
+        $sql = "SELECT * FROM baiviet WHERE iddm =2 ";
+        return $this->query($sql);
+      }
+      
+      function Listngoaingu(){
+        $sql = "SELECT * FROM baiviet WHERE iddm =3 ";
+        return $this->query($sql);
       }
 }
 

@@ -8,14 +8,21 @@
     <title><?= $title ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="./views/scss/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.11/dist/sweetalert2.all.min.js"></script>
-</head>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+</head>
+<style>
+
+</style>
 <body>
     <header>
         <nav>
@@ -30,6 +37,27 @@
                     <li><a href="?act=danhsach">Diễn đàn</a></li>
                     <li><a href="">Giới thiệu</a></li>
                     <li><a href="">Liên hệ</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Các bài viết
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="?act=goclaptrinh">Góc lập trình</a>
+                                <a class="dropdown-item" href="?act=gockynang">Góc kỹ năng</a>
+                                <a class="dropdown-item" href="?act=gocngoaingu">Góc ngoại ngữ</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form class="search-container" action="//llamaswill.tumblr.com/search">
+                            <input id="search-box" type="text" class="search-box" name="q" />
+                            <label for="search-box">
+                                <span class="glyphicon glyphicon-search search-icon"> <i class="fas fa-search"></i> </span>
+                            </label>
+                            <input type="submit" id="search-submit" />
+                        </form>
+                    </li>
                 </ul>
             </div>
             <div class="account">
@@ -57,26 +85,60 @@
         <?php if (isset($view) && file_exists($view) == true) require_once $view;
         else echo "không có";  ?>
     </main>
-    <footer class="bg-footer">
+    <footer class="site-footer">
         <div class="container">
-            <div class="row mt-4">
-                <div class="col-sm-4">
-                    <h2 class="title-footer mb-4">VỀ CHÚNG TÔI</h2>
-                    <p class="text-dark">Dawn là nơi chia sẻ những kiến thức và kỹ năng cần thiết trong cuộc sống giúp học sinh, sinh viên hiểu thêm
-                        về những kỹ năng cần thiết trong cuộc sống, công việc, học tập để có thể vững tin bước đi bằng chính đôi chân của mình.</p>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>Về chúng tôi</h6>
+                    <p class="text-justify">DAWN.com
+                        là một WEBSITE chia sẽ kiến thức lập trình. 
+                        DAWN tập trung vào việc cung cấp kiến hiệu quả nhất và giúp thự hiện chúng đơn giản. 
+                        Chúng tôi sẽ giúp các lập trình viên xây dựng các khái niệm bằng các ngôn ngữ lập trình khác nhau bao gồm 
+                        C, C ++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL và Algorithm.
+                     </p>
                 </div>
-                <div class="col-sm-4 ms-auto">
-                    <h2 class="title-footer mb-4">LIÊN HỆ</h2>
-                    <ul class="list-unstyled text-dark">
-                        <li class="mb-2">Địa chỉ: Cao đẳng FPT</li>
-                        <li class="mb-2">Điện thoại: **********</li>
-                        <li class="mb-2">Email: test@gmail.com</li>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Danh mục</h6>
+                    <ul class="footer-links">
+                    <li><a href="">C</a></li>
+                    <li><a href="">UI Design</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">Java</a></li>
+                    <li><a href="">Android</a></li>
+                    <li><a href="">Templates</a></li>
                     </ul>
                 </div>
 
+                <div class="col-xs-6 col-md-3">
+                    <h6>Các liên kết</h6>
+                    <ul class="footer-links">
+                    <li><a href="http://scanfcode.com/about/">Về chúng tôi</a></li>
+                    <li><a href="http://scanfcode.com/contact/">Liên hệ với chúng tôi</a></li>
+                    <li><a href="http://scanfcode.com/privacy-policy/">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+                <a href="#">DAWN</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                    <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="#"><i class="fab fa-google"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fab fa-instagram"></i></a></li>   
+                    </ul>
+                </div>
             </div>
         </div>
-
     </footer>
 </body>
 <script>

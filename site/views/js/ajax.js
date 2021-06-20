@@ -75,3 +75,5 @@ $(document).ready(function () {
      
     // });
 });
+// search
+document.addEventListener("touchstart", function(){}, true);
