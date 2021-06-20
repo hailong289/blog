@@ -50,7 +50,7 @@ class model_home extends model_system{
         return $this->query($sql);
       }
       function ListBV_new(){
-        $sql = "SELECT * FROM baiviet ORDER BY idbv DESC LIMIT 5";
+        $sql = "SELECT * FROM baiviet ORDER BY thoigian DESC LIMIT 5";
         return $this->query($sql);
       }
       function User_DangBai($id){
