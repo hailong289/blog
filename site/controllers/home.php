@@ -145,6 +145,7 @@ class Home
         $title = "Góc Lập Trình";
         $title_dm = "Lập trình";
         $bvlaptrinh = $this->model->Listlaptrinh();
+        $bvnew = $this->model->ListBV_new();
         // $page_num = 1;
         // if(isset($_GET['page'])) $page_num = $_GET['page'];
         // $page_size = 10;
@@ -162,6 +163,7 @@ class Home
         $title = "Góc kỹ năng";
         $title_dm = "Kỹ năng";
         $bvkynang = $this->model->Listkynang();
+        $bvnew = $this->model->ListBV_new();
         // $page_num = 1;
         // if(isset($_GET['page'])) $page_num = $_GET['page'];
         // $page_size = 10;
@@ -179,6 +181,7 @@ class Home
         $title = "Góc ngoại ngữ";
         $title_dm = "Ngoại ngữ";
         $bvlaptrinh = $this->model->Listngoaingu();
+        $bvnew = $this->model->ListBV_new();
         // $page_num = 1;
         // if(isset($_GET['page'])) $page_num = $_GET['page'];
         // $page_size = 10;
